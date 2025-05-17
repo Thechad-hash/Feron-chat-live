@@ -65,9 +65,9 @@ export default function FeronChat() {
   return (
     <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
       <h1 style={{ fontSize: "24px", fontWeight: "bold", textAlign: "center" }}>
-        FERON AI Assistant
+        FERON AI
       </h1>
-      <p style={{ textAlign: "center", color: "#666" }}>Tier 1 Access Granted</p>
+      <p style={{ textAlign: "center", color: "#666" }}>Here when you need</p>
 
       <div
         style={{
@@ -118,13 +118,6 @@ export default function FeronChat() {
         <button onClick={sendMessage} disabled={isLoading} style={{ padding: "8px 16px" }}>
           {isLoading ? "..." : "Send"}
         </button>
-      </div>
-
-      <div style={{ border: "1px solid #ccc", padding: "10px", borderRadius: "6px" }}>
-        <label style={{ display: "block", marginBottom: "6px" }}>
-          Upload File (Tier 1)
-        </label>
-        <input type="file" ref={fileInputRef} onChange={handleFileUpload} />
       </div>
     </div>
   );

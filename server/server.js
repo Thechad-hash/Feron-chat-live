@@ -23,7 +23,7 @@ app.post('/api/feron', async (req, res) => {
     const chatResponse = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo',
       messages: [
-        { role: 'system', content: 'You are FERON, a Tier 1 machinist assistant for CNC operations...' },
+        { role: 'system', content: 'You are FERON, here to be a friend for someone that may need your help or advice...' },
         ...messages
       ],
       temperature: 0.7,
