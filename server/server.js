@@ -21,7 +21,7 @@ app.post('/api/feron', async (req, res) => {
   try {
     const { messages } = req.body;
     const chatResponse = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo',
+      model: 'gpt-4o',//gpt-3.5-turbo
       messages: [
         { role: 'system', content: 'You are FERON, here to be a friend for someone that may need your help or advice...' },
         ...messages

@@ -100,6 +100,7 @@ export default function FeronChat() {
               padding: "8px",
               borderRadius: "4px",
               fontStyle: msg.role === "system" ? "italic" : "normal",
+              color: "#000000",
             }}
           >
             {msg.content}
